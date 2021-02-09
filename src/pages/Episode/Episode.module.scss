@@ -1,0 +1,76 @@
+@import '../../styles//variables.scss';
+
+.root {
+  padding: 20px 30px;
+
+  @media (max-width: $mobile-width) {
+    padding: 20px;
+  }
+}
+
+.header {
+  font-size: 32px;
+  font-weight: 700;
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+  }
+}
+
+.summaryWrapper {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+
+  @media (max-width: $tablet-width) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.image {
+  flex: 0 0 33.333%;
+
+  @media (max-width: $tablet-width) {
+    flex: 0 0 50%;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex: none;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.summary {
+  margin-left: 30px;
+  flex: 0 0 33.333%;
+
+  @media (max-width: $tablet-width) {
+    flex: 1 0 50%;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex: none;
+    width: 100%;
+    margin: 30px auto 0;
+  }
+}
+
+.episodeInfo {
+  margin-left: 30px;
+  flex: 1 0 33.333%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex: none;
+  }
+}
