@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+
+.root {
+  padding: 20px;
+  border-radius: 3px;
+  background-color: $color-gallery;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.itemsList {
+  margin-top: 20px;
+}
+
+.item {
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+}

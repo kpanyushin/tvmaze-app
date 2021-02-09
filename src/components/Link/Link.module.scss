@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+
+.root {
+  color: $color-paradiso;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
